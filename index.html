@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembayaran Skyzo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.pinimg.com/originals/cc/6a/1f/cc6a1f3aa94f9e3ff22fdcbdb0133ae6.jpg') no-repeat center center fixed;
+      background-size: cover;
+      padding: 30px;
+      text-align: center;
+      color: white;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+
+    .payment-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 16px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 0 12px rgba(255,255,255,0.2);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card p {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 20px;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
+      transform: scale(1.05);
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body onload="document.getElementById('audio').play()">
+
+  <!-- ✅ Background Sound: SmodyPlsasure -->
+  <audio id="audio" autoplay loop>
+    <source src="https://files.catbox.moe/94jvb2.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <h1>Pilih Metode Pembayaran</h1>
+
+  <div class="payment-container">
+
+    <div class="card">
+      <img src="https://img1.pixhost.to/images/6558/612094428_skyzo.jpg" alt="QRIS">
+      <p>Scan QRIS untuk semua e-wallet</p>
+      <a class="btn" href="https://img1.pixhost.to/images/6558/612094428_skyzo.jpg" target="_blank">Lihat QR</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/250x250?text=DANA" alt="DANA">
+      <p>No DANA:<br><strong>0857 6813 5581</strong></p>
+      <p>Nama: <strong>Nixx Ardxxxx</strong></p>
+      <a class="btn" href="https://link.dana.id/transfer/u/085768135581" target="_blank">Bayar via DANA</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/250x250?text=GOPAY" alt="GOPAY">
+      <p>No GOPAY:<br><strong>0857 6813 5581</strong></p>
+      <p>Nama: <strong>Rxxx Anxxx</strong></p>
+      <a class="btn" href="https://gopay.co.id/payment/085768135581" target="_blank">Bayar via GOPAY</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/250x250?text=WhatsApp" alt="WA">
+      <p>Konfirmasi via WA</p>
+      <a class="btn" href="https://wa.me/6285191695684?text=Halo%20saya%20sudah%20transfer" target="_blank">Chat WhatsApp</a>
+    </div>
+
+  </div>
+
+</body>
+  </html>
